@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { useTranslation } from "react-i18next";
 import { Button } from "../../Button";
-import { ReactComponent as PlFlag } from "./pl-flag.svg";
+//import { ReactComponent as PlFlag } from "./pl-flag.svg";
 import { ReactComponent as EnFlag } from "./en-flag.svg";
 import { ReactComponent as EsFlag } from "./es-flag.svg";
 

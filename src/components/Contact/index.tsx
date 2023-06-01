@@ -25,14 +25,6 @@ export const Contact = () => {
               Please do not contact the clinic for any questionnaire related questions.
             </Trans>
           </div>
-          <div>
-            <Trans t={t} i18nKey="reachable via">
-              The author is reachable via{" "}
-              <a href="mailto:juliusz@kosciolek.dev">
-                <Address>juliusz@kosciolek.dev</Address>
-              </a>
-            </Trans>
-          </div>
         </Root>
       </Layout>
     </>

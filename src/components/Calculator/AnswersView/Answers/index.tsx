@@ -9,7 +9,7 @@ import {
 import { Divider } from "../../../Divider";
 import { Grid } from "../../../Grid";
 import { Answer, Text } from "./Answer";
-import { PolishWarning } from "./PolishWarning";
+// import { PolishWarning } from "./PolishWarning";
 
 export const Answers = memo(() => {
   const first = useAppSelector(getFirstAnswer);
@@ -20,7 +20,6 @@ export const Answers = memo(() => {
 
   return (
     <Root>
-      <PolishWarning />
       <Grid container>
         {Array.from({ length: count }).map((_, i) => (
           <StyledGrid

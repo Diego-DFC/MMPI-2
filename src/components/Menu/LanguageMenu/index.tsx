@@ -1,21 +1,22 @@
 import styled from "@emotion/styled";
 import { useTranslation } from "react-i18next";
 import { Button } from "../../Button";
-import { ReactComponent as PlFlag } from "./pl-flag.svg";
+// import { ReactComponent as PlFlag } from "./pl-flag.svg";
 import { ReactComponent as EnFlag } from "./en-flag.svg";
+import { ReactComponent as EsFlag } from "./es-flag.svg";
 
 const flags = {
-  pl: PlFlag,
+  es: EsFlag,
   en: EnFlag,
 };
 
 export const LanguageMenu = () => {
   const { t, i18n } = useTranslation();
-  const FlagComponent = i18n.language.toLowerCase().includes("en") ? flags.en : flags.pl;
+  const FlagComponent = i18n.language.toLowerCase().includes("en") ? flags.en : flags.es;
 
   const onClick = () => {
     /* Todo - handle more languages */
-    i18n.changeLanguage(i18n.language === "pl" ? "en" : "pl");
+    i18n.changeLanguage(i18n.language === "es" ? "en" : "es");
   };
   return (
     <Root left={<FlagComponent />} onClick={onClick}>
